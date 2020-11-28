@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
 import Coursename from "./Coursename";
+import Heroku from "./Heroku";
+
 
 function NavBar() {
   return (
@@ -21,9 +23,9 @@ function NavBar() {
               <li>
                 <Link to="/about">About</Link>
               </li>
-              {/* <li>
-                <Link to="/coursename">coursename</Link>
-              </li> */}
+              <li>
+                <Link to="/deploy">Deploy on Heroku</Link>
+              </li>
             </ul>
           </div>
         </nav>
@@ -32,7 +34,9 @@ function NavBar() {
           <Route path="/about">
             <About />
           </Route>
-          {/* <Route path="/:coursename" children={<Coursename />} /> */}
+          <Route path="/deploy">
+            <Heroku />
+          </Route>
           <Route path="/:coursename">
             <Coursename />
           </Route>
