@@ -140,7 +140,7 @@ const Coursename = () => {
           className="col s12 m12 center"
           style={{ padding: "2px", fontSize: "2.6rem" }}
         >
-          <strong>Data Not found</strong>
+          <strong>Loading...</strong>
         </div>
       )}
     </div>
